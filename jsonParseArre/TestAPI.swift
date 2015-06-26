@@ -13,7 +13,7 @@ class TestAPI {
     func loadShots(shotsUrl: String, completion: (([TestData]) -> Void)!) {
         
         let accessToken = "dc5a71673c52e02fb510a7bf514789a90c1d9c169c13edbd92e5e19ba74a5f56"
-        //  var urlString = shotsUrl + "?access_token=" + accessToken + "&page=1&per_page=25"
+
         var urlString = shotsUrl
         
         println("NSURLSession: \(urlString)")
@@ -48,29 +48,14 @@ class TestAPI {
                 for shot in NewsDictionary{
                     
 
-                    
-                    //  let shot = NewsData(NewsDictionary. : shot as NSDictionary)
-                    //   let shot = NewsData(shot)
-                    //   var title =  shotsDataArray["items"]!["title"] as String
-                    //    var date = shotsDataArray["items"]!["date"] as String
-                    //   var url = shotsDataArray["items"]!["url"] as String
-                    // var shot: NewsData;()
-                    
+
                     let shot = TestData(data:shot as! NSDictionary )
                     
-                    
-                    //  shot.title = title
-                    // shot.url = url
-                    // shot.date = date
-                    
-                    //   println(shotsDataArray["title"])
-                    
-                    //println(shot.title)
-                    
+
+                   
                     shots.append(shot as TestData)
                     
-                    // println("Appending Data :")
-                    
+
                 }
                 
                 
