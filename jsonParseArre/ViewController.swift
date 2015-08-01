@@ -22,7 +22,7 @@ class ViewController: UIViewController, UITableViewDelegate {
         
         links = [TestData]()
         let api = TestAPI()
-        api.loadShots("http://bollyvideoz.com/iphone/alltrailers.php", completion: didLoadShots)
+        api.loadShots("https://gist.githubusercontent.com/gambhirpulkit/c4c295f57f3da91ca071/raw/fa4cc2aa7d1a51dbd120263013a835c9ce6a42f6/alltrailers%2520", completion: didLoadShots)
 
     }
     
